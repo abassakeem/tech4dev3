@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Luckiest+Guy&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Luckiest+Guy&family=Mina:wght@400;700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <link href="./css/index.css" rel="stylesheet" />
+  </head>
+  <body class="m-0 p-0 overflow-x-hidden">
+    <div class="hero-section relative h-screen bg-[#151083]">
+ 
+  <nav
+    class="bg-[#151083] p-6 px-8 lg:px-40 flex flex-wrap items-center justify-between fixed top-0 left-0 w-full z-50"
+  >
+    <div class="text-[#ffffff] flex items-center justify-between w-full lg:w-auto">
+      <h1 class="font-medium flex items-center gap-2 text-2xl md:text-4xl">
+        <img src="./img/logo.svg" class="inline items-center" alt="Logo" />
+        Spotlight
+      </h1>
+      <button
+        id="menu-toggle"
+        class="block lg:hidden text-white focus:outline-none"
+      >
+        <svg
+          class="h-6 w-6"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      id="menu"
+      class="navs hidden lg:flex flex-col lg:flex-row lg:items-center font-medium text-[#D0D3DA] w-full lg:w-auto gap-4 lg:gap-8 mt-4 lg:mt-0"
+    >
+      <a href="page2.html" class="hover:text-white">All projects</a>
+      <a class="hover:border-b-2 hover:border-[#432361] hover:text-white"
+        >About Us</a
+      >
+      <a class="hover:border-b-2 hover:border-[#432361] hover:text-white"
+        >Start Project</a
+      >
+    </div>
+    <div class="right-btns hidden lg:flex text-center items-center gap-4">
+      <a
+        class="font-bold border-[#777E90] border-2 rounded-xl py-2 px-4 lg:py-3 lg:px-6 text-[#FCFCFD]"
+        >Log in</a
+      >
+      <a
+        class="text-white py-2 px-4 lg:py-3 lg:px-6 rounded-lg bg-[#2B5FFE] font-bold"
+        >Sign up</a
+      >
+    </div>
+  </nav>
+
+  <div class="hero-content flex flex-col lg:flex-row items-center justify-center pt-8 text-center lg:text-left h-full px-4 md:px-16 lg:px-40 space-y-8 lg:space-y-0">
+    <div class="hero-text text-white max-w-xl">
+      <p class="text-sm md:text-base font-medium">
+        INVEST SMARTER. BE PART OF THE FUTURE.
+      </p>
+      <h2 class="font-bold text-4xl md:text-5xl lg:text-[64px] mt-4">
+        Invest in the future you believe in
+      </h2>
+      <p class="font-thin text-sm md:text-base leading-relaxed mt-4">
+        Access highly-vetted investment opportunities in movies,
+        documentaries, and cinema works
+      </p>
+      <div
+        class="right-btns mt-8 flex flex-wrap justify-center lg:justify-start gap-4"
+      >
+        <a
+          class="text-white py-3 px-6 md:px-8 rounded-lg bg-[#2B5FFE] font-bold text-sm md:text-base"
+          href="#"
+        >
+          Invest now
+        </a>
+        <a
+          class="font-bold border-[#777E90] border-2 rounded-xl py-3 px-6 md:px-8 text-[#FCFCFD] text-sm md:text-base"
+          href="#"
+        >
+          Start a campaign
+        </a>
+      </div>
+      <div class="mt-8 flex justify-center lg:justify-start">
+        <img
+          src="./img/Line.svg"
+          class="rounded-full p-6 border border-[#ffffff]"
+          alt="Line Icon"
+        />
+      </div>
+      <div
+        class="flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-4 mt-8"
+      >
+        <span class="text-white">Follow us</span>
+        <div class="flex items-center gap-4">
+          <div class="border-t border-[#764AF2] w-8"></div>
+          <div class="flex items-center gap-4">
+            <img src="./img/Facebook.svg" alt="Facebook" class="h-6 w-6" />
+            <img src="./img/Twitter.svg" alt="Twitter" class="h-6 w-6" />
+            <img src="./img/LinkedIn.svg" alt="LinkedIn" class="h-6 w-6" />
+            <img src="./img/telegram.svg" alt="Telegram" class="h-6 w-6" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="search-group bg-[#0A0749] hidden md:flex  justify-center items-center rounded-3xl p-4 sm:p-6 lg:p-8 w-full lg:w-auto"
+    >
+      <img
+        src="./img/Rectangle 1045.svg"
+        class="max-w-full h-auto "
+        alt="Investment Image"
+      />
+    </div>
+  </div>
+</div>
+
+<div class="relative flex items-center justify-center mt-12 px-4 sm:px-16">
+  <div class="absolute flex items-center justify-center">
+    <div class="flex flex-col md:flex-row mt-8 items-center bg-white gap-4  px-4 sm:px-16 py-8 rounded-2xl">
+      <span class="text-[#545A66] text-lg sm:text-2xl"
+        >Supported Cryptocurrencies</span
+      >
+      <div class="flex items-center gap-4">
+        <div class="hidden md:block border-t sm:border-[#000000] w-8 border-transparent"></div>
+
+        <div class="flex items-center gap-4 sm:gap-8">
+          <img src="./img/btc.svg" alt="Bitcoin" class="h-6 w-6 sm:h-auto sm:w-auto" />
+          <img src="./img/eth.svg" alt="Ethereum" class="h-6 w-6 sm:h-auto sm:w-auto" />
+          <img src="./img/Litecoin.svg" alt="Litecoin" class="h-6 w-6 sm:h-auto sm:w-auto" />
+          <img src="./img/Stellar.svg" alt="Stellar" class="h-6 w-6 sm:h-auto sm:w-auto" />
+          <img src="./img/pyra.svg" alt="Pyramid" class="h-6 w-6 sm:h-auto sm:w-auto" />
+          <img src="./img/dash.svg" alt="Dash" class="h-6 w-6 sm:h-auto sm:w-auto" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="bg-[#FBFAFF] px-4 sm:px-16 lg:px-24">
+  <div class="pt-36 text-center">
+    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold color-[#1D263A]">Popular Projects</h1>
+        <p class="color-[#1D263A]">
+          Check out our featured projects from promising directors and
+          curations. Start investing now.
+        </p>
+      </div>
+      <div class="projects-cards">
+        <div class="cards-section grid grid-cols-1 sm:grid:cols-2 md:grid-cols-4  gap-4 items-center rounded-xl w-full"></div>
+
+        <div class="flex items-center justify-center w-full my-8">
+          <button
+            class="text-center p-4 rounded-xl bg-[#2B5FFE] text-white font-bold"
+          >
+            View All Projects
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="spotlight min-h-screen mb-8 md:mb-0 flex justify-center items-center bg-[#130A2B] px-4 sm:px-16 lg:px-40">
+      <div class="flex flex-col items-center justify-center">
+        <div class="headers text-center">
+          <h3 class="text-3xl sm:text-4xl lg:text-5xl text-[#FCFCFD] font-bold py-8">How Spotlights work</h3>
+          
+          <p class="text-[#E6E8EC] pb-16">
+            Stacks is a production-ready library of stackable content blocks
+            built in React Native.
+          </p>
+        </div>
+        <div class="second-section flex flex-col lg:flex-row items-center gap-8 justify-between text-center">
+          <div class="flex flex-col gap-8 items-center">
+            <img src="./img/download.svg" />
+            <div class="">
+              <p class="text-[#FCFCFD] text-lg font-bold">select a project</p>
+              <p class="text-[#FCFCFD] text-sm">
+                Fitness Pro tracks your workouts, get better results, and be the
+                best version of you.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-center">
+            <div class="w-2 h-2 border-[#B1B5C3] border-2 rounded-full"></div>
+            <div
+              class="border-t border-dashed border-[#B1B5C3] w-12 mx-2"
+            ></div>
+            <div class="w-2 h-2 border-[#B1B5C3] border-2 rounded-full"></div>
+          </div>
+
+          <div class="flex flex-col gap-8 items-center">
+            <img src="./img/[key.svg" />
+            <div class="">
+              <p class="text-[#FCFCFD] text-lg font-bold">select a project</p>
+              <p class="text-[#FCFCFD] text-sm">
+                Fitness Pro tracks your workouts, get better results, and be the
+                best version of you.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-center">
+            <div class="w-2 h-2 border-[#B1B5C3] border-2 rounded-full"></div>
+            <div
+              class="border-t border-dashed border-[#B1B5C3] w-12 mx-2"
+            ></div>
+            <div class="w-2 h-2 border-[#B1B5C3] border-2 rounded-full"></div>
+          </div>
+
+          <div class="flex flex-col gap-8 items-center">
+            <img src="./img/bun.svg" />
+            <div class="">
+              <p class="text-[#FCFCFD] text-lg font-bold">select a project</p>
+              <p class="text-[#FCFCFD] text-sm">
+                Fitness Pro tracks your workouts, get better results, and be the
+                best version of you.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-center">
+            <div class="w-2 h-2 border-[#B1B5C3] border-2 rounded-full"></div>
+            <div
+              class="border-t border-dashed border-[#B1B5C3] w-12 mx-2"
+            ></div>
+            <div class="w-2 h-2 border-[#B1B5C3] border-2 rounded-full"></div>
+          </div>
+
+          <div class="flex flex-col gap-8 items-center">
+            <img src="./img/clock.svg" />
+            <p class="text-[#FCFCFD] text-lg font-bold">Reap returns</p>
+            <div class="">
+              <p class="text-[#FCFCFD] text-lg font-bold">select a project</p>
+              <p class="text-[#FCFCFD] text-sm mb-8 sm:mb-8 ">
+                Fitness Pro tracks your workouts, get better results, and be the
+                best version of you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="ico grid grid-cols-1 sm:grid:cols-1 md:grid-cols-3 items-center rounded-xl w-full px-4 sm:px-16 lg:px-40"
+    ></div>
+    <div class="flex items-center justify-center w-full my-8 mt-4">
+      <button
+        class="text-center p-4 rounded-xl bg-[#2B5FFE] text-white font-bold"
+      >
+        View All ICO Projects
+      </button>
+    </div>
+
+    <div class="asking min-h-screen bg-[#193461] p-4 sm:px-16 lg:px-40 flex items-center justify-center">
+      <div class="flex flex-col lg:flex-row w-full items-center justify-center text-white">
+        <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
+          <h3 class="text-3xl md:text:5xl font-bold">
+            Asking For Money is hard.
+            <span class="text-[#01E8B0]">Spotlight</span> makes it easier.
+          </h3>
+          <img src="./img/Rectangle 9.svg" class="p-8 w-full" />
+          <p class="font-thin">
+            Access highly-vetted investment opportunities in movies,
+            documentaries and cinema works
+          </p>
+          <button class="bg-[#2B5FFE] font-bold p-4 rounded-2xl text-xs">
+            INVEST NOW
+          </button>
+        </div>
+        <div class="w-full lg:w-1/2">
+          <div class="bg-white text-[#040C22] text-center rounded-xl p-4">
+            <h6 class="text-[#0BB8E4] text-center">King of boys ICO End IN</h6>
+            <div>
+              <div
+                class="grid grid-cols-4 gap-4 items-center justify-between my-4"
+              >
+                <div
+                  class="flex flex-col items-center justify-center rounded-lg bg-[#E4F3FF] text-[#040C22] p-2 text-center"
+                >
+                  <p class="text-5xl mina-numbers">10</p>
+                  <p>Days</p>
+                </div>
+                <div
+                  class="flex flex-col items-center justify-center rounded-lg bg-[#E4F3FF] text-[#040C22] p-2 text-center"
+                >
+                  <p class="text-5xl mina-numbers">4</p>
+                  <p>HOURS</p>
+                </div>
+                <div
+                  class="flex flex-col items-center justify-center rounded-lg bg-[#E4F3FF] text-[#040C22] p-2 text-center"
+                >
+                  <p class="text-5xl mina-numbers">14</p>
+                  <p>MINUTES</p>
+                </div>
+                <div
+                  class="flex flex-col items-center justify-center rounded-lg bg-[#E4F3FF] text-[#040C22] p-2 text-center"
+                >
+                  <p class="text-5xl mina-numbers">10</p>
+                  <p>SECONDS</p>
+                </div>
+              </div>
+              <div class="my-8">
+                <h6 class="text-xs text[#737B8C]">TOTAL AMOUNT TO BE RAISED</h6>
+                <p class="font-bold text-5xl mb-4">ETH 3,575,000</p>
+              </div>
+    
+              <div class="loader flex items-center justify-center">
+                <img src="./img/loader.svg " class="w-full" />
+              </div>
+            </div>
+            <button
+              class="p-4 w-full bg-[#2B5FFE] my-8 text-white font-bold rounded-lg"
+            >
+              Token Sale Ended
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div
+      class="join-spotlight min-h-screen bg-[#130A2B] p-4 sm:px-16 lg:px-40 flex items-center justify-center"
+    >
+      <div class="flex flex-col lg:flex-row w-full items-center justify-center text-white">
+        <div class="w-1/2">
+          <img src="./img/Illustration.svg" class="p-8 w-full" />
+        </div>
+        <div class="w-full lg:w-1/2">
+          <div class="bg-[#180D35] text-[#FCFCFD] rounded-xl p-8">
+            <h6 class="text-[#0BB8E4] text-3xl md:text:5xl font-bold">Join Spotlight</h6>
+            <p class="text-[#777E90]">
+              Made great returns, your investment goals shape a curated portfolio
+              of next biggest movies.
+            </p>
+            <div>
+              <div
+                class="grid grid-cols-1 gap-4 justify-between my-4"
+              >
+                <div
+                  class="flex flex-col items-center justify-center rounded-lg text-[#040C22] p-2 text-center"
+                >
+                  <p class="text-5xl mina-numbers">10</p>
+                  <p>Days</p>
+                </div>
+                <div
+                  class="flex flex-col items-center justify-center rounded-lg text-[#040C22] p-2 text-center"
+                >
+                  <p class="text-5xl mina-numbers">4</p>
+                  <p>HOURS</p>
+                </div>
+                <div
+                  class="flex flex-col items-center justify-center rounded-lg text-[#040C22] p-2 text-center"
+                >
+                  <p class="text-5xl mina-numbers">14</p>
+                  <p>MINUTES</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <footer class="text-[#6B7280] py-10 px-4 sm:px-32">
+      <div class="flex flex-col sm:flex-row justify-between items-start gap-8">
+        <div class="left flex flex-wrap gap-8">
+          <div>
+            <h4 class="font-bold">Solution</h4>
+            <p>Event directory</p>
+            <p>Ticketing</p>
+          </div>
+          <div>
+            <h4 class="font-bold">Company</h4>
+            <p>About Us</p>
+            <p>FAQs</p>
+            <p>Careers</p>
+            <p>Support</p>
+          </div>
+        </div>
+        <div class="right">
+          <h3 class="font-bold">Subscribe to our newsletter</h3>
+          <p class="font-thin mt-2">
+            The latest news, articles, and resources, sent to your inbox weekly.
+          </p>
+
+          <input type="text" class="rounded-lg border p-2 border-[#D1D5DB]" />
+          <button class="p-2 text-white bg-[#764AF2] rounded-lg">
+            subscribe
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>
